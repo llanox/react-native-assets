@@ -1,0 +1,14 @@
+{
+  "name": "react-native-assets",
+  "version": "0.0.1",
+  "dependencies": {
+    "react-native": "^0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llanox/react-native-assests.git"
+  },
+  "license": "MIT",
+  "keywords": ["react-native", "react-utilities", "ios", "assets", "downloader"],
+  "main": "Assets.ios.js"
+}
