@@ -1,4 +1,4 @@
-# react-native-assests
+# react-native-assets
 React native module that allows download assets in background from an url and persist them into a specific directory in Documents folder on iOS. In addition, you can delete and list assets from that directory.
 
 # Getting started
