@@ -24,8 +24,6 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(downloadResourceFromUrl:(NSURL *)url andStoreInto:(NSString *) cacheDirectory
                   onSuccesfull:(RCTResponseSenderBlock)successCallback onFailure:(RCTResponseSenderBlock)errorCallback)
 {
-   NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-   AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
   
    NSURLRequest *request = [NSURLRequest requestWithURL:url];
   
@@ -36,11 +34,11 @@ RCT_EXPORT_METHOD(downloadResourceFromUrl:(NSURL *)url andStoreInto:(NSString *)
    [ op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
     
    
-    RCTStoreManager* manager = [ [RCTStoreManager alloc] init];
+    RCTStoreManager* storeManager = [ [RCTStoreManager alloc] init];
     NSString *stringURL = [ url absoluteString];
     NSString *fileName = [ stringURL lastPathComponent ];
     
-    [ manager storeDataIntoLocalFilesystem:responseObject intoFile:fileName inDirectory:cacheDirectory ];
+    [ storeManager storeDataIntoLocalFilesystem:responseObject intoFile:fileName inDirectory:cacheDirectory ];
      
      successCallback(@[@{@"filename": fileName}]);
 

@@ -106,27 +106,29 @@ RCT_EXPORT_METHOD(storeData:(id)content intoFile:(NSString *)filename inDirector
 
 
 // remove a file in a specific sub directory
-- (BOOL*)removeFile:(NSString *)filename inDirectory:(NSString *)directory {
+- (BOOL)removeFile:(NSString *)filename inDirectory:(NSString *)directory {
 
  
   NSString *fullPath = [_rootPath stringByAppendingPathComponent:directory];
-  if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath])
-    return false;
   
-  fullPath = [fullPath stringByAppendingPathComponent:filename];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath]) {
+        return NO;
+    }
   
-  NSError *error = [NSError new];
+    fullPath = [fullPath stringByAppendingPathComponent:filename];
   
-  if ([[NSFileManager defaultManager] removeItemAtPath:fullPath error:&error]){
-    NSLog(@"Successfully removed %@", fullPath);
-    return true;
+    NSError *error = [NSError new];
   
-  }else{
-    NSLog(@"ERROR: can't remove %@ : %@",fullPath, [error localizedDescription]);
-    return false;
-  }
+    if ([[NSFileManager defaultManager] removeItemAtPath:fullPath error:&error]){
+       NSLog(@"Successfully removed %@", fullPath);
+       return YES;
   
-  return false;
+    }else{
+       NSLog(@"ERROR: can't remove %@ : %@",fullPath, [error localizedDescription]);
+       return NO;
+    }
+  
+  return NO;
 }
 
 // get the data stored into a file

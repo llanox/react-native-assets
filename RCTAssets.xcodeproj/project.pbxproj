@@ -7,21 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C28265831B3385FA000718DB /* libRCTAssets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C28265771B3385FA000718DB /* libRCTAssets.a */; };
 		C282659B1B339AAE000718DB /* RCTAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C28265981B339AAE000718DB /* RCTAssetManager.m */; };
 		C282659C1B339AAE000718DB /* RCTStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C282659A1B339AAE000718DB /* RCTStoreManager.m */; };
 		EBD510F60C29E16BEAD206EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204D8CF527B1EA9DEF02754B /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C28265841B3385FA000718DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C282656F1B3385FA000718DB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C28265761B3385FA000718DB;
-			remoteInfo = RCTAssets;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C28265751B3385FA000718DB /* CopyFiles */ = {
@@ -40,7 +29,6 @@
 		204D8CF527B1EA9DEF02754B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C9284B3705CE0B132DDD04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C28265771B3385FA000718DB /* libRCTAssets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTAssets.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C28265821B3385FA000718DB /* RCTAssetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCTAssetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28265971B339AAE000718DB /* RCTAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTAssetManager.h; sourceTree = "<group>"; };
 		C28265981B339AAE000718DB /* RCTAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTAssetManager.m; sourceTree = "<group>"; };
 		C28265991B339AAE000718DB /* RCTStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTStoreManager.h; sourceTree = "<group>"; };
@@ -53,14 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD510F60C29E16BEAD206EF /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C282657F1B3385FA000718DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C28265831B3385FA000718DB /* libRCTAssets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				C28265771B3385FA000718DB /* libRCTAssets.a */,
-				C28265821B3385FA000718DB /* RCTAssetsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,24 +107,6 @@
 			productReference = C28265771B3385FA000718DB /* libRCTAssets.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C28265811B3385FA000718DB /* RCTAssetsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C282658E1B3385FA000718DB /* Build configuration list for PBXNativeTarget "RCTAssetsTests" */;
-			buildPhases = (
-				C282657E1B3385FA000718DB /* Sources */,
-				C282657F1B3385FA000718DB /* Frameworks */,
-				C28265801B3385FA000718DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C28265851B3385FA000718DB /* PBXTargetDependency */,
-			);
-			name = RCTAssetsTests;
-			productName = RCTAssetsTests;
-			productReference = C28265821B3385FA000718DB /* RCTAssetsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,9 +117,6 @@
 				ORGANIZATIONNAME = "Juan Gabriel Gutierrez";
 				TargetAttributes = {
 					C28265761B3385FA000718DB = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
-					C28265811B3385FA000718DB = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -176,20 +134,9 @@
 			projectRoot = "";
 			targets = (
 				C28265761B3385FA000718DB /* RCTAssets */,
-				C28265811B3385FA000718DB /* RCTAssetsTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C28265801B3385FA000718DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		3CA68B6E9C34A0DC5CB16D28 /* Copy Pods Resources */ = {
@@ -234,22 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C282657E1B3385FA000718DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C28265851B3385FA000718DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C28265761B3385FA000718DB /* RCTAssets */;
-			targetProxy = C28265841B3385FA000718DB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C28265891B3385FA000718DB /* Debug */ = {
@@ -348,7 +280,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14635B7233FA2279E457C8B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -358,41 +290,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0C9284B3705CE0B132DDD04 /* Pods.release.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C282658F1B3385FA000718DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RCTAssetsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C28265901B3385FA000718DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RCTAssetsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -413,15 +313,6 @@
 			buildConfigurations = (
 				C282658C1B3385FA000718DB /* Debug */,
 				C282658D1B3385FA000718DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C282658E1B3385FA000718DB /* Build configuration list for PBXNativeTarget "RCTAssetsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C282658F1B3385FA000718DB /* Debug */,
-				C28265901B3385FA000718DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
