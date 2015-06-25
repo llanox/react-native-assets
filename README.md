@@ -1,6 +1,6 @@
-## react-native-assests
+# react-native-assests
 
-# Installation
+# Getting started
 
 
 1. sudo npm install
