@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/llanox/react-native-assests.git"
   },
+    "scripts": {
+    "postinstall": "pod install --verbose --project-directory=./"
+  },
   "license": "MIT",
   "keywords": ["react-native", "react-utilities", "ios", "assets", "downloader"],
   "main": "Assets.ios.js"
