@@ -14,7 +14,7 @@
 
 
 
-@implementation RCTResourceManager
+@implementation RCTAssetManager
 
 RCT_EXPORT_MODULE();
 
