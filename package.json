@@ -1,17 +1,28 @@
 {
   "name": "react-native-assets",
   "version": "0.0.1",
+  "license": "MIT",
+  "keywords": ["react-native", "react-utilities", "ios", "assets", "downloader","assets manager"],
   "dependencies": {
-    "react-native": "^0.5.0"
+    "react-native": "^0.9.0"
   },
+    "description": "Module to manage assets. It allows you download assests from a network and store into a specific local folder on iOS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/llanox/react-native-assests.git"
+    "url": "git+https://github.com/llanox/react-native-assests.git"
   },
-    "scripts": {
+  "author": "Gabriel Gutierrez <correo.del.llanox@gmail.com>",
+   "contributors": [{
+   "name": "Georg Göttlich",
+   "email": "mail@dvine.de",
+   "url": "https://github.com/dvine-multimedia"
+   }],
+  "bugs": {
+    "url": "https://github.com/llanox/react-native-assests/issues"
+  },
+  "homepage": "github.com/llanox/react-native-assests#readme",
+  "scripts": {
     "postinstall": "pod install --verbose --project-directory=./"
   },
-  "license": "MIT",
-  "keywords": ["react-native", "react-utilities", "ios", "assets", "downloader"],
   "main": "Assets.ios.js"
 }
