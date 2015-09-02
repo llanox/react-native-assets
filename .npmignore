@@ -5,6 +5,8 @@
 # Xcode
 #
 build/
+iOS/RCTAssetsManager.xcworkspace/
+iOS/Pods/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
