@@ -92,7 +92,7 @@ class Assets {
         );
 
 
-        RCTAssetManager.deleteResourceInCache(cacheDir,filename,
+        RCTAssetManager.deleteResourceInCache(filename,cacheDir,
 
             (deleted) => {
                 successCallback && successCallback(deleted);

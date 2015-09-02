@@ -101,6 +101,14 @@ RCT_EXPORT_METHOD(storeData:(id)content intoFile:(NSString *)filename inDirector
 }
 
 
+- (NSString*) getFullPath:(NSString *)directory storedFilename:(NSString *)filename {
+  
+    NSString *fullPath = [ [_rootPath stringByAppendingPathComponent:directory] stringByAppendingString: filename ];
+    return fullPath;
+
+}
+
+
 
 
 

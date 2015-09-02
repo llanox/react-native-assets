@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C28265761B3385FA000718DB"
-               BuildableName = "libRCTAssets.a"
-               BlueprintName = "RCTAssets"
-               ReferencedContainer = "container:RCTAssets.xcodeproj">
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "RCTAssetsManager.app"
+               BlueprintName = "RCTAssetsManager"
+               ReferencedContainer = "container:RCTAssetsManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C28265811B3385FA000718DB"
-               BuildableName = "RCTAssetsTests.xctest"
-               BlueprintName = "RCTAssetsTests"
-               ReferencedContainer = "container:RCTAssets.xcodeproj">
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "RCTAssetsManagerTests.xctest"
+               BlueprintName = "RCTAssetsManagerTests"
+               ReferencedContainer = "container:RCTAssetsManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C28265811B3385FA000718DB"
-               BuildableName = "RCTAssetsTests.xctest"
-               BlueprintName = "RCTAssetsTests"
-               ReferencedContainer = "container:RCTAssets.xcodeproj">
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "RCTAssetsManagerTests.xctest"
+               BlueprintName = "RCTAssetsManagerTests"
+               ReferencedContainer = "container:RCTAssetsManager.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C28265761B3385FA000718DB"
-            BuildableName = "libRCTAssets.a"
-            BlueprintName = "RCTAssets"
-            ReferencedContainer = "container:RCTAssets.xcodeproj">
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "RCTAssetsManager.app"
+            BlueprintName = "RCTAssetsManager"
+            ReferencedContainer = "container:RCTAssetsManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,15 +72,16 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C28265761B3385FA000718DB"
-            BuildableName = "libRCTAssets.a"
-            BlueprintName = "RCTAssets"
-            ReferencedContainer = "container:RCTAssets.xcodeproj">
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "RCTAssetsManager.app"
+            BlueprintName = "RCTAssetsManager"
+            ReferencedContainer = "container:RCTAssetsManager.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +91,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C28265761B3385FA000718DB"
-            BuildableName = "libRCTAssets.a"
-            BlueprintName = "RCTAssets"
-            ReferencedContainer = "container:RCTAssets.xcodeproj">
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "RCTAssetsManager.app"
+            BlueprintName = "RCTAssetsManager"
+            ReferencedContainer = "container:RCTAssetsManager.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

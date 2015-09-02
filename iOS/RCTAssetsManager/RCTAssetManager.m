@@ -37,10 +37,14 @@ RCT_EXPORT_METHOD(downloadResourceFromUrl:(NSURL *)url andStoreInto:(NSString *)
     RCTStoreManager* storeManager = [ [RCTStoreManager alloc] init];
     NSString *stringURL = [ url absoluteString];
     NSString *fileName = [ stringURL lastPathComponent ];
-    
-    [ storeManager storeDataIntoLocalFilesystem:responseObject intoFile:fileName inDirectory:cacheDirectory ];
      
-     successCallback(@[@{@"filename": fileName}]);
+    BOOL isStored = [ storeManager storeDataIntoLocalFilesystem:responseObject intoFile:fileName inDirectory:cacheDirectory ];
+    
+     
+    NSString *fullPath = [ storeManager getFullPath:cacheDirectory storedFilename:fileName ];
+
+    successCallback(@[@{@"filename":fullPath }]);
+    
 
      
    // On Failure

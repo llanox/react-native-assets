@@ -16,6 +16,8 @@
 
 - (NSMutableArray*) retrieveFilesFromDir:(NSString *)directory;
 
+- (NSString*) getFullPath:(NSString *)directory storedFilename:(NSString *)filename;
+
 - (BOOL)removeFile:(NSString *)filename inDirectory:(NSString *)directory;
 
 @end
