@@ -7,7 +7,7 @@ React native module that allows download assets in background from an url and pe
 2. Install CocoaPods https://guides.cocoapods.org/using/getting-started.html#toc_3
 3. cd iOS/
 4. pod install
-5. Then open RCTAssets.cworkspace and run the app
+5. Then open RCTAssetsManager.cworkspace and run the app
 
 
 
